@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">UrbanSpts</string>
+
+    //login page
+    <string name="login">Login</string>
+    <string name="discover">Discover the best spots</string>
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetpwd">Forgot Password?</string>
+    <string name="loginnew">LOGIN</string>
+    <string name="registernow">Register Now!</string>
+
+    //contact us
+    <string name="how_help">How Can We Help?</string>
+    <string name="help_description">Got a question or query? drop it in the box below for us and we will respond shortly.</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_message">Your Message</string>
+    <string name="send_message">Send Message</string>
+    <string name="reach_us">Reach Us</string>
+
+
+    //changepwd
+    <string name="changepwd">Change Password</string>
+    <string name="current_pwd">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_Password">Confirm New Password</string>
+    <string name="Change">Change</string>
+
+    //register
+    <string name="name">First Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="register_new">REGISTER</string>
+    <string name="login_now">Login Now!</string>
+
+    //home
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="locations">Locations</string>
+    <string name="profile">Profile</string>
+
+    //side bar
+    <string name="wishlist">Wishlist</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="nodata">Their is no spot Regsitered yet in this category </string>
+    <string name="wishlist_no_data">Your Wishlist is Empty</string>
+
+    //profile
+    <string name="editprofile">Edit Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    //editprofile
+    <string name="upload_profile">Upload Profile Picture</string>
+    <string name="save">Save</string>
+
+    //home
+    <string name="popular_spot">Popular Spots</string>
+    <string name="popular_categories">Popular Categories</string>
+    <string name="explore">Explore More Spots</string>
+
+    //whishlist
+    <string name="whishlist">Wishlist</string>
+
+
+    //error
+    <string name="error_empty_user_id">Please enter your Email Address</string>
+    <string name="error_empty_current_pwd">Please enter your Current Password</string>
+    <string name="error_empty_new_pwd">Please enter your New Password</string>
+    <string name="error_empty_cfm_pwd">Please Confirm Password </string>
+    <string name="error_empty_msg">Please Enter your Message</string>
+    <string name="error_empty_user_name">Please enter your User Name</string>
+    <string name="error_empty_first_name">Please enter your First Name</string>
+    <string name="error_empty_last_name">Please enter your Last Name</string>
+    <string name="error_empty_password">Please enter your Password</string>
+    <string name="error_authentication">User not found</string>
+
+</resources>

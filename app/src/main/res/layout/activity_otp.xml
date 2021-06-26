@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_header"
+            android:layout_height="@dimen/_120sdp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/back"
+                android:id="@+id/iv_back"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+            <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="Enter Your OTP"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_26sdp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="We have sent four digit code to your registered email of UrbanSpts Please check and varify thanks"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_18sdp"
+                android:layout_height="wrap_content"/>
+            <com.mukesh.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_gravity="center"
+                app:itemSpacing="@dimen/_30sdp"
+                android:textColor="@color/black"
+                app:itemCount="4"
+                android:focusableInTouchMode="true"
+                app:lineColor="@color/black"
+                app:viewType="line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:id="@+id/ll_submit"
+            android:background="@drawable/boarder_login_roundedblack"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_height="wrap_content">
+            <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="SUBMIT"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLoaderOtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorAccent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

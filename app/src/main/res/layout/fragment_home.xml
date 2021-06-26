@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorbg"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_popular_spot"
+    android:layout_height="wrap_content">
+    <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+        android:layout_width="wrap_content"
+        android:text="@string/popular_spot"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/blacktext"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_popular_spots"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+                <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:text="@string/popular_categories"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_popular_categories"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+                        android:layout_width="wrap_content"
+                        android:text="@string/explore"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/blacktext"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_explore"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorBlack"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

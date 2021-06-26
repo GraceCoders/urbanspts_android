@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_layout"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login_bg"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+            <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/login"
+                android:textStyle="bold"
+                android:textSize="@dimen/_26sdp"/>
+            <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/discover"
+                android:textSize="@dimen/_16sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/boarder_login_white"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_email"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputStyle"
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:id="@+id/et_pwd"
+                        android:textSize="@dimen/_12sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blacktext"
+                    android:text="@string/forgetpwd"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_forget_pwd"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:id="@+id/ll_login"
+                    android:background="@drawable/boarder_login_roundedblack"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_height="wrap_content">
+                    <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/loginnew"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                   android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blacktext"
+                        android:text="Dont't have an account? "
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"/>
+                    <com.urbanspts.urbanspts.controller.CustomViews.MyTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_register_now"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/registernow"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorBlack"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
