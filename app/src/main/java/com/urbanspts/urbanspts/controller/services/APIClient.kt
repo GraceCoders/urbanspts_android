@@ -1,5 +1,6 @@
 package com.urbanspts.urbanspts.controller.repository
 
+import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.conscrypt.Conscrypt
@@ -7,6 +8,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.security.Security
 import java.util.concurrent.TimeUnit
+
 
 /**
  * Created by Nishant on 03/07/20.
@@ -16,6 +18,7 @@ object APIClient {
 
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BODY
+
 
         Security.insertProviderAt(Conscrypt.newProvider(), 1);
 
@@ -37,4 +40,6 @@ object APIClient {
 
         return service
     }
+
+
 }
